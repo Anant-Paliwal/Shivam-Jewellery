@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Shivam Jewellery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="text-3xl font-serif font-bold text-yellow-600">Shivam Jewellery</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/index" class="text-gray-800 hover:text-yellow-600 transition">Home</a>
+                
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+               
+                <button class="text-gray-700 hover:text-yellow-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                </button>
+                <button class="text-gray-700 hover:text-yellow-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <div class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-serif mb-4">Our Collections</h1>
+            <div class="flex items-center text-sm">
+                <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-yellow-500">Products</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Filters Sidebar -->
+            <div class="lg:w-1/4">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-semibold mb-4">Filters</h2>
+                    
+                    <!-- Category Filter -->
+                    <div class="mb-6">
+                        <h3 class="font-medium mb-3">Category</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Rings</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Necklaces</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Earrings</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Bracelets</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Range -->
+                    <div class="mb-6">
+                        <h3 class="font-medium mb-3">Price Range</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="form-radio text-yellow-600">
+                                <span class="ml-2">Under ₹10,000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="form-radio text-yellow-600">
+                                <span class="ml-2">₹10,000 - ₹25,000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="form-radio text-yellow-600">
+                                <span class="ml-2">₹25,000 - ₹50,000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="form-radio text-yellow-600">
+                                <span class="ml-2">Above ₹50,000</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Material -->
+                    <div class="mb-6">
+                        <h3 class="font-medium mb-3">Material</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Gold</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Silver</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Platinum</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-yellow-600">
+                                <span class="ml-2">Diamond</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-yellow-600 text-white py-2 rounded hover:bg-yellow-700 transition">
+                        Apply Filters
+                    </button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="lg:w-3/4">
+                <!-- Sort and View Options -->
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center">
+                        <span class="text-gray-600 mr-2">Sort by:</span>
+                        <select class="border rounded p-2">
+                            <option>Latest</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Popularity</option>
+                        </select>
+                    </div>
+                    <div class="text-gray-600">
+                        Showing 1-12 of 48 products
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Product Cards (12 items) -->
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="h-64 bg-gray-200 relative">
+                            <img src="https://emori.in/wp-content/uploads/2023/07/R1357.3.webp" alt="Diamond Ring" class="w-full h-full object-cover" />
+                            <span class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm">New</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Classic Diamond Ring</h3>
+                            <div class="text-yellow-500 mb-2">★★★★★</div>
+                            <p class="text-gray-600 mb-4">18K Gold with VVS1 diamond</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-yellow-600">₹65,000</span>
+                                <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More product cards with similar structure -->
+                    <!-- Additional products would be listed here -->
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-12 flex justify-center">
+                    <div class="flex space-x-2">
+                        <a href="#" class="px-4 py-2 border rounded hover:bg-yellow-600 hover:text-white transition">1</a>
+                        <a href="#" class="px-4 py-2 border rounded hover:bg-yellow-600 hover:text-white transition">2</a>
+                        <a href="#" class="px-4 py-2 border rounded hover:bg-yellow-600 hover:text-white transition">3</a>
+                        <a href="#" class="px-4 py-2 border rounded hover:bg-yellow-600 hover:text-white transition">4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Shivam Jewellery</h3>
+                    <p class="mb-4">Creating timeless elegance since 1992.</p>
+                    <p>© 2025 Shivam Jewellery. All rights reserved.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="hover:text-yellow-500 transition">Home</a></li>
+                        <li><a href="index.html#collection" class="hover:text-yellow-500 transition">Collection</a></li>
+                        <li><a href="index.html#about" class="hover:text-yellow-500 transition">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-yellow-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-500 transition">Rings</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Necklaces</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Earrings</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Bracelets</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Customer Service</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-500 transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Warranty</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 transition">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample product data - in a real implementation, this would likely come from a database
+const products = [
+  {
+    id: 1,
+    name: "Classic Diamond Ring",
+    category: "Rings",
+    price: 65000,
+    material: ["Gold", "Diamond"],
+    image: "https://emori.in/wp-content/uploads/2023/07/R1357.3.webp",
+    rating: 5,
+    description: "18K Gold with VVS1 diamond",
+    isNew: true
+  },
+  {
+    id: 2,
+    name: "Osla Ring",
+    category: "Rings",
+    price: 18000,
+    material: ["Silver", "Pearl"],
+    image: "https://kinclimg9.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BICM0449R15_RAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-70491.png",
+    rating: 4,
+    description: "Sterling silver with cultured pearls",
+    isNew: false
+  },
+  {
+    id: 3,
+    name: "Platinum Band",
+    category: "Rings",
+    price: 45000,
+    material: ["Platinum"],
+    image: "https://kinclimg9.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BIAR0097R13_YAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-64527.png",
+    rating: 5,
+    description: "Pure platinum wedding band",
+    isNew: false
+  },
+  {
+    id: 4,
+    name: "Chandrani Pearls",
+    category: "Rings",
+    price: 35000,
+    material: ["Gold", "Diamond"],
+    image: "https://chandranipearls.in/cdn/shop/files/925_Sterling_Silver_Beautiful_Rose_Ring_R01594_-_Chandrani_Pearls-4001374.jpg?v=1727534890&width=533",
+    rating: 5,
+    description: "14K Gold studs with diamond accents",
+    isNew: true
+  },
+  {
+    id: 5,
+    name: "Engagement Ring",
+    category: "Rings",
+    price: 28000,
+    material: ["Diamond"],
+    image: "https://4cs.gia.edu/wp-content/uploads/2017/11/1-217987-1.jpg",
+    rating: 4,
+    description: "22K Gold chain bracelet",
+    isNew: false
+  },
+  {
+    id: 6,
+    name: "Silver Anklet",
+    category: "Bracelets",
+    price: 8000,
+    material: ["Silver"],
+    image: "https://m.media-amazon.com/images/I/61w2-09w8ZL._AC_UY1100_.jpg",
+    rating: 4,
+    description: "Sterling silver anklet with charms",
+    isNew: true
+  },
+  {
+    id: 7,
+    name: "Sapphire Ring",
+    category: "Rings",
+    price: 52000,
+    material: ["Gold", "Sapphire"],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOc1xVrqW3mQRluAZVlf_hVKdl6mK_-0FQw&s",
+    rating: 5,
+    description: "18K Gold with natural sapphire",
+    isNew: false
+  },
+  {
+    id: 8,
+    name: "Platinum Necklace",
+    category: "Necklaces",
+    price: 72000,
+    material: ["Platinum", "Diamond"],
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThc5bd7aGIFfLxZ32DFLSBu47oY0K0nWbF-UM4kx1ii1HcSAbYBTjm9Ne16VO4i-qopYs&usqp=CAU",
+    rating: 5,
+    description: "Platinum chain with diamond pendant",
+    isNew: true
+  },
+  {
+    id: 9,
+    name: "Silver Toe bracelets",
+    category: "bracelets",
+    price: 5000,
+    material: ["Silver"],
+    image: "https://www.soosi.co.in/cdn/shop/files/WhatsAppImage2023-06-25at12.14.49PM_1200x1200.jpg?v=1687676286",
+    rating: 3,
+    description: "Traditional silver toe Bracelets",
+    isNew: false
+  },
+  {
+    id: 10,
+    name: "Pearl Earrings",
+    category: "Earrings",
+    price: 12000,
+    material: ["Gold", "Pearl"],
+    image: "https://www.curiocottage.in/cdn/shop/files/WFES62_2_ed34372d-d609-4647-b55b-527ccc6e308a_2048x.jpg?v=1734806104",
+    rating: 4,
+    description: "14K Gold with freshwater pearls",
+    isNew: false
+  },
+  {
+    id: 11,
+    name: "Diamond Tennis Bracelet",
+    category: "Bracelets",
+    price: 85000,
+    material: ["Platinum", "Diamond"],
+    image: "https://www.candere.com/media/jewellery/images/c021371_1.jpeg",
+    rating: 5,
+    description: "Platinum with 3ct diamond accents",
+    isNew: true
+  },
+  {
+    id: 12,
+    name: "Gold Chain",
+    category: "Necklaces",
+    price: 32000,
+    material: ["Gold"],
+    image: "https://www.orra.co.in/media/catalog/product/cache/8706a87b250cd4797f5bf599698c5c7a/o/s/osn23024_1_b0c2jti3rvtvgsgb.jpg",
+    rating: 4,
+    description: "22K Gold chain necklace",
+    isNew: false
+  },
+];
+
+// State variables for filters and search
+let activeFilters = {
+  categories: [],
+  priceRange: null,
+  materials: []
+};
+let searchQuery = '';
+let sortOption = 'Latest';
+let currentPage = 1;
+const productsPerPage = 6;
+
+// DOM Elements
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize the product display
+  renderProducts(getFilteredProducts());
+  setupEventListeners();
+  updateProductCount();
+});
+
+function setupEventListeners() {
+  // Category filter listeners
+  document.querySelectorAll('input[type="checkbox"][class="form-checkbox text-yellow-600"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      const category = this.nextElementSibling.textContent.trim();
+      const material = this.nextElementSibling.textContent.trim();
+      
+      if (this.parentElement.parentElement.parentElement.querySelector('h3').textContent === 'Category') {
+        if (this.checked) {
+          activeFilters.categories.push(category);
+        } else {
+          activeFilters.categories = activeFilters.categories.filter(cat => cat !== category);
+        }
+      } else if (this.parentElement.parentElement.parentElement.querySelector('h3').textContent === 'Material') {
+        if (this.checked) {
+          activeFilters.materials.push(material);
+        } else {
+          activeFilters.materials = activeFilters.materials.filter(mat => mat !== material);
+        }
+      }
+      
+      currentPage = 1;
+      renderProducts(getFilteredProducts());
+      updateProductCount();
+    });
+  });
+
+  // Price range filter listeners
+  document.querySelectorAll('input[type="radio"][name="price"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const priceText = this.nextElementSibling.textContent.trim();
+      
+      if (priceText === 'Under ₹10,000') {
+        activeFilters.priceRange = { min: 0, max: 10000 };
+      } else if (priceText === '₹10,000 - ₹25,000') {
+        activeFilters.priceRange = { min: 10000, max: 25000 };
+      } else if (priceText === '₹25,000 - ₹50,000') {
+        activeFilters.priceRange = { min: 25000, max: 50000 };
+      } else if (priceText === 'Above ₹50,000') {
+        activeFilters.priceRange = { min: 50000, max: Infinity };
+      }
+      
+      currentPage = 1;
+      renderProducts(getFilteredProducts());
+      updateProductCount();
+    });
+  });
+
+  // Sort options listener
+  document.querySelector('select').addEventListener('change', function() {
+    sortOption = this.value;
+    renderProducts(getFilteredProducts());
+  });
+
+  // Apply filters button
+  document.querySelector('button.w-full.bg-yellow-600').addEventListener('click', function() {
+    renderProducts(getFilteredProducts());
+    updateProductCount();
+  });
+
+  // Search functionality
+  const searchButton = document.querySelector('button svg[d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"]').parentElement;
+  
+  // Create search input if it doesn't exist
+  if (!document.getElementById('search-input')) {
+    const searchInput = document.createElement('input');
+    searchInput.id = 'search-input';
+    searchInput.type = 'text';
+    searchInput.placeholder = 'Search products...';
+    searchInput.className = 'border rounded p-2 mr-2 hidden';
+    searchButton.parentElement.insertBefore(searchInput, searchButton);
+  }
+
+  const searchInput = document.getElementById('search-input');
+  
+  searchButton.addEventListener('click', function() {
+    if (searchInput.classList.contains('hidden')) {
+      searchInput.classList.remove('hidden');
+      searchInput.focus();
+    } else {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      currentPage = 1;
+      renderProducts(getFilteredProducts());
+      updateProductCount();
+    }
+  });
+  
+  searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      currentPage = 1;
+      renderProducts(getFilteredProducts());
+      updateProductCount();
+    }
+  });
+
+  // Add pagination event listeners
+  setupPagination();
+}
+
+function getFilteredProducts() {
+  // Start with all products
+  let filtered = [...products];
+  
+  // Apply search filter if search query exists
+  if (searchQuery) {
+    filtered = filtered.filter(product => 
+      product.name.toLowerCase().includes(searchQuery) || 
+      product.description.toLowerCase().includes(searchQuery)
+    );
+  }
+  
+  // Apply category filters
+  if (activeFilters.categories.length > 0) {
+    filtered = filtered.filter(product => 
+      activeFilters.categories.includes(product.category)
+    );
+  }
+  
+  // Apply price range filter
+  if (activeFilters.priceRange) {
+    filtered = filtered.filter(product => 
+      product.price >= activeFilters.priceRange.min && 
+      product.price <= activeFilters.priceRange.max
+    );
+  }
+  
+  // Apply material filters
+  if (activeFilters.materials.length > 0) {
+    filtered = filtered.filter(product => 
+      product.material.some(mat => activeFilters.materials.includes(mat))
+    );
+  }
+  
+  // Apply sorting
+  switch(sortOption) {
+    case 'Price: Low to High':
+      filtered.sort((a, b) => a.price - b.price);
+      break;
+    case 'Price: High to Low':
+      filtered.sort((a, b) => b.price - a.price);
+      break;
+    case 'Popularity':
+      filtered.sort((a, b) => b.rating - a.rating);
+      break;
+    case 'Latest':
+    default:
+      filtered.sort((a, b) => (b.isNew === a.isNew) ? 0 : b.isNew ? 1 : -1);
+      break;
+  }
+  
+  return filtered;
+}
+
+function renderProducts(filteredProducts) {
+  const productsContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3.gap-6');
+  productsContainer.innerHTML = '';
+  
+  // Calculate pagination
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const paginatedProducts = filteredProducts.slice(startIndex, startIndex + productsPerPage);
+  
+  if (paginatedProducts.length === 0) {
+    productsContainer.innerHTML = `
+      <div class="col-span-3 text-center py-8">
+        <p class="text-lg text-gray-600">No products match your criteria. Please try different filters.</p>
+      </div>
+    `;
+    return;
+  }
+  
+  paginatedProducts.forEach(product => {
+    const productCard = document.createElement('div');
+    productCard.className = 'bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300';
+    
+    productCard.innerHTML = `
+      <div class="h-64 bg-gray-200 relative">
+        <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover" />
+        ${product.isNew ? '<span class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-full text-sm">New</span>' : ''}
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">${product.name}</h3>
+        <div class="text-yellow-500 mb-2">${'★'.repeat(product.rating)}${'☆'.repeat(5-product.rating)}</div>
+        <p class="text-gray-600 mb-4">${product.description}</p>
+        <div class="flex justify-between items-center">
+          <span class="text-xl font-bold text-yellow-600">₹${product.price.toLocaleString()}</span>
+          <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">Add to Cart</button>
+        </div>
+      </div>
+    `;
+    
+    productsContainer.appendChild(productCard);
+  });
+  
+  updatePagination(filteredProducts.length);
+}
+
+function updateProductCount() {
+  const filteredProducts = getFilteredProducts();
+  const countText = document.querySelector('.text-gray-600:not([mr-2])');
+  const start = (currentPage - 1) * productsPerPage + 1;
+  const end = Math.min(currentPage * productsPerPage, filteredProducts.length);
+  
+  countText.textContent = `Showing ${filteredProducts.length > 0 ? start : 0}-${end} of ${filteredProducts.length} products`;
+}
+
+function updatePagination(totalProducts) {
+  const paginationContainer = document.querySelector('.mt-12.flex.justify-center .flex');
+  const totalPages = Math.ceil(totalProducts / productsPerPage);
+  
+  paginationContainer.innerHTML = '';
+  
+  for (let i = 1; i <= totalPages; i++) {
+    const pageLink = document.createElement('a');
+    pageLink.href = '#';
+    pageLink.className = `px-4 py-2 border rounded transition ${i === currentPage ? 'bg-yellow-600 text-white' : 'hover:bg-yellow-600 hover:text-white'}`;
+    pageLink.textContent = i;
+    
+    pageLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      currentPage = i;
+      renderProducts(getFilteredProducts());
+      updateProductCount();
+    });
+    
+    paginationContainer.appendChild(pageLink);
+  }
+}
+
+function setupPagination() {
+  document.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A' && e.target.parentElement.classList.contains('flex') && 
+        e.target.parentElement.parentElement.classList.contains('mt-12')) {
+      e.preventDefault();
+      const pageNum = parseInt(e.target.textContent);
+      if (!isNaN(pageNum)) {
+        currentPage = pageNum;
+        renderProducts(getFilteredProducts());
+        updateProductCount();
+      }
+    }
+  });
+}
+    </script>
+</body>
+</html>
